@@ -57,3 +57,39 @@ export const SvgContainer = styled.div`
   margin-bottom: 5px;
   margin-top: 5px;
 `;
+
+export const ButtonRemoveWrapper = styled.div`
+  border-radius: 5px;
+  min-width: 140px;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  background: #f7b092;
+  margin-top: 10px;
+`;
+
+export const ButtonRemoveText = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  margin: auto;
+`;
+
+export const ButtonExitWrapper = styled.div`
+  border-radius: 5px;
+  min-width: 140px;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  background: #f7b092;
+  margin-top: 10px;
+`;
+
+export const ButtonExitText = styled.div`
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  margin: auto;
+`;

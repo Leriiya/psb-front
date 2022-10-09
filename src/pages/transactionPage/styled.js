@@ -28,13 +28,15 @@ export const CardSum = styled.div``;
 export const FavouriteContact = styled.div`
 font-size: 16px;
 font-weight: 600;
+color: white;
 `;
 
 export const Favourite = styled.div`
-  background: white;
-  margin-top: 90px;
+  background: #141835;
+  margin-top: 195px;
   width: 100%;
   padding: 10px 15px;
+  border-radius: 13px;
 `;
 
 export const ContactSearch = styled.div`
@@ -55,3 +57,12 @@ export const SelectTransContainer = styled.div`
     margin-top: 35px;
     width: 350px;
 `
+export const PageTransContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  ${'' /* background: #141835; */}
+  background: #45455F;
+  flex-direction: column;
+`;

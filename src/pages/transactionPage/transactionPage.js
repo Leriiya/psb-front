@@ -4,15 +4,10 @@ import { Contacts } from "../../components/contacts/contacts";
 import { Header, Icon, Name, PageContainer } from "../mainPage/styled";
 import { observer } from "mobx-react-lite";
 import {
-  CardDescription,
-  CardName,
-  CardNumber,
-  CardSum,
-  ContactSearch,
   Favourite,
   FavouriteContact,
-  Money,
   MoneyInput,
+  PageTransContainer,
   SelectTransContainer,
   TransactionCard,
 } from "./styled";
@@ -23,7 +18,7 @@ import CardIcon from '../../images/card.svg'
 export const TransactionPage = observer(() => {
   const { navigate } = useVidgets();
   return (
-    <PageContainer>
+    <PageTransContainer>
       <Header>
         <Name>Валерия</Name>
         <Icon>
@@ -54,6 +49,6 @@ export const TransactionPage = observer(() => {
       {/* <Money>Сумма</Money> */}
       <MoneyInput placeholder="Введите сумму" />
       <ButtonTransaction navigate={navigate} />
-    </PageContainer>
+    </PageTransContainer>
   );
 });

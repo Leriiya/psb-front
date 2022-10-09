@@ -6,7 +6,7 @@ export const ContactsWrappet = styled.div`
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #141835;
   color: #ffffff;
   justify-content: space-between;
 `;
@@ -28,4 +28,6 @@ export const Contact = styled.img`
 
 export const ContactName = styled.div`
   margin-top: 5px;
+  color: white;
+  text-align: center;
 `

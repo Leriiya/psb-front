@@ -5,12 +5,13 @@ export const SuccessText = styled.div`
   height: 100px;
   color: white;
   font-size: 28px;
-  margin-top: 160px;
-  margin-bottom: 160px;
+  margin-top: 140px;
   text-align: center;
 
 `;
 
 export const SuccessImg = styled.img`
-
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 200px;
 `

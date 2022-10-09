@@ -5,10 +5,9 @@ export const PageContainer = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  background: pink;
+  background: #141835;
   overflow: hidden;
   flex-direction: column;
-  padding: 10px;
 `;
 
 export const Description = styled.div`
@@ -28,10 +27,11 @@ position: absolute;
   border-radius: 22px;
   filter: brightness(0.6);
   margin: 10px;
+  margin-top: 85px;
 `;
 
 export const SelectContainer = styled.div`
-    margin-top: 145px;
+    
     width: 350px;
 `
 
@@ -41,5 +41,27 @@ export const SelectAnotherContainer = styled.div`
 `
 
 export const ShowContacts = styled.div`
-  align-items: start !important;
+  color: white;
+  margin-bottom: 5px;
+  text-align: center;
+`
+
+export const ShowAnotherContacts = styled.div`
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+`
+
+export const FamilyContainer = styled.div`
+  margin-top: 150px;
+`
+
+export const FamilyAnotherContainer = styled.div`
+  margin-top: 15px;
+`
+
+export const ButtonFamilyContainer = styled.div`
+display: flex;
+justify-content: space-around;
 `

@@ -2,28 +2,24 @@ import {
   AuthPageContainer,
   AuthTitle,
   AuthWrapper,
-  ButtonContainer,
   RecoveryButton,
   Logo,
-  LogoImg,
   Remember,
-  Client
+  Client,
 } from "./styled";
 import React from "react";
 import { AuthInput } from "./components/authInput/authInput";
-import { Button } from "../../components/button/button";
-import { ButtonApple } from "../../components/button/buttonApple";
-import { getRoute } from "../../getRoute/getRoute";
-import { LogoSvg } from "../../images/logosvg";
-import LogoIcon from '../../images/logo.svg'
+import LogoIcon from "../../images/logo.svg";
+import { useVidgets } from "../mainPage/hook";
+import { observer } from 'mobx-react-lite'
+import { ButtonAuth } from "../../components/button/buttonContainer";
 
-export const AuthPage = ({ navigate }) => {
+export const AuthPage = observer(() => {
+  const { navigate } = useVidgets();
+
   return (
     <AuthPageContainer>
       <Logo src={LogoIcon} />
-      {/* <LogoImg><Logos /></LogoImg> */}
-
-      {/* <LogoSvg /> */}
       <AuthWrapper>
         <AuthTitle>Добро пожаловать!</AuthTitle>
         <AuthInput
@@ -39,22 +35,11 @@ export const AuthPage = ({ navigate }) => {
           placeholder="Введите пароль"
         />
         <RecoveryButton onClick={() => {}}>Забыли пароль?</RecoveryButton>
-        <ButtonContainer>
-          <ButtonApple
-            width="230px"
-            text="Sign in with Apple"
-            onClick={() => {}}
-          />
-          <Button
-            width="230px"
-            text="Войти"
-            onClick={() => navigate(getRoute("mainpage"))}
-          />
-        </ButtonContainer>
+        <ButtonAuth navigate={navigate} />
         <Remember>Не помню пароль или логин</Remember>
         <Remember>Правила безопасности</Remember>
       </AuthWrapper>
       <Client>Стать клиентом через биометрию</Client>
     </AuthPageContainer>
   );
-};
+});

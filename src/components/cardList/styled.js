@@ -5,7 +5,8 @@ export const CardsContainer = styled.div`
   height: 170px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 1px;
+  border-radius: 10px;
 `;
 
 export const Card = styled.div`
@@ -15,10 +16,14 @@ export const Card = styled.div`
   justify-content: space-between;
   background: white;
   padding: 5px 15px;
+  background: #f7b092;
+  color: white;
+  margin: 0 8px;
+  border-radius: 10px;
 
   &:active {
-    background: #f7b092;
-    color: white;
+    background: white;
+    color: #f7b092;
   }
 `;
 
